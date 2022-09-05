@@ -1,0 +1,7 @@
+node_modules
+build
+dump.json
+key.json
+*.csv
+typescript/tools/test.ts
+.vscode
