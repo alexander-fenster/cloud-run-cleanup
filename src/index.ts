@@ -55,11 +55,10 @@ async function cleanupService(
   const images = JSON.parse(stdout) as Array<{
     package: string;
     version: string;
-    tags: string;
+    tags: string[];
   }>;
   for (const image of images) {
-    const {package: packageName, version, tags: tagsStr} = image;
-    const tags = tagsStr.split(/,\s*/);
+    const {package: packageName, version, tags: tags} = image;
     const imageName = `${packageName}@${version}`;
     if (activeImages.has(imageName) || tags.includes('latest')) {
       console.log(`Skipping active image: ${imageName}`);
