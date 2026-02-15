@@ -5,3 +5,4 @@ key.json
 *.csv
 typescript/tools/test.ts
 .vscode
+.DS_Store

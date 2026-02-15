@@ -1,7 +1,7 @@
 {
   "name": "cloud-run-cleanup",
-  "version": "0.1.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Delete old revisions and their Docker images in Google Cloud Run",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
   "files": [
